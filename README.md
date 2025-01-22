@@ -1,5 +1,8 @@
 # UIPack-Manan
 
+![npm version](https://img.shields.io/npm/v/uipack-manan)
+![npm downloads](https://img.shields.io/npm/dm/uipack-manan)
+
 **Ready to elevate your React development game?** Introducing `uipack-manan`, the perfect npm package for beginners and seasoned developers alike! With `uipack-manan`, you can start your React journey with simplicity and style. Dive in with a pre-built counter hook and a custom button component to create engaging and dynamic user interfaces with ease.
 
 ---
@@ -58,6 +61,7 @@ export default App;
 The `useCounter` hook provides an easy way to manage counter states.
 
 #### Returns:
+
 - **`count`**: The current counter value.
 - **`increment`**: Function to increase the counter.
 - **`decrement`**: Function to decrease the counter.
@@ -65,6 +69,7 @@ The `useCounter` hook provides an easy way to manage counter states.
 ### **Custom `Button` Component**
 
 #### Props:
+
 - **`onclick` (Function)**: Function to handle button clicks.
 - **`children` (ReactNode)**: Content to display inside the button.
 
@@ -90,6 +95,8 @@ The `useCounter` hook provides an easy way to manage counter states.
 ## 📜 License
 
 `uipack-manan` is licensed under the [MIT License](./LICENSE).
+
+![license](https://img.shields.io/npm/l/uipack-manan)
 
 ---
 
