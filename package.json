@@ -1,23 +1,45 @@
 {
   "name": "uipack-manan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "type": "module",
   "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "npx rollup -c"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manan5657/uipack-manan.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "scripts": {
+    "build": "npx rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [
+    "uipack",
+    "component",
+    "npmpack",
+    "uiux",
+    "reactcomponent"
+  ],
+  "author": "Manan Bhasin",
+  "license": "MIT",
+  "description": "This is an npm package for react ui components in which an user can use creative and fully responsive ui components in their projects by writing less code and in fully seamless way.",
   "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-typescript": "^12.1.2",
+    "@storybook/addon-essentials": "^8.5.0",
+    "@storybook/addon-interactions": "^8.5.0",
+    "@storybook/addon-onboarding": "^8.5.0",
+    "@storybook/addon-webpack5-compiler-swc": "^2.0.0",
+    "@storybook/blocks": "^8.5.0",
+    "@storybook/react": "^8.5.0",
+    "@storybook/react-webpack5": "^8.5.0",
+    "@storybook/test": "^8.5.0",
     "@types/react": "^19.0.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rollup": "^4.31.0",
+    "storybook": "^8.5.0",
     "tslib": "^2.8.1"
   }
 }

@@ -3,9 +3,10 @@ import { ReactNode } from "react";
 
 type PropsType = {
   children: ReactNode;
+  onclick?: () => void;
 };
 
-const Button = ({ children }: PropsType) => {
+const Button = ({ children, onclick }: PropsType) => {
   return (
     <button
       style={{
@@ -17,6 +18,7 @@ const Button = ({ children }: PropsType) => {
         color: "white",
         border: "none",
       }}
+      onClick={onclick}
     >
       {children}
     </button>
