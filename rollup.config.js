@@ -1,6 +1,7 @@
 import { defineConfig } from "rollup";
 
 import typescript from "@rollup/plugin-typescript";
+import postcss from "rollup-plugin-postcss";
 
 export default defineConfig({
   input: "src/index.ts",
@@ -10,5 +11,5 @@ export default defineConfig({
     name: "uipack-manan",
   },
   external: ["react", "react-dom"],
-  plugins: [typescript({ tsconfig: "tsconfig.json" })],
+  plugins: [typescript({ tsconfig: "tsconfig.json" }), postcss()],
 });

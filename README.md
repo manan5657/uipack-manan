@@ -1,77 +1,119 @@
-# UIPack-Manan
+# UIPack-Manan - A UI Pack for Developers
 
 ![npm version](https://img.shields.io/npm/v/uipack-manan)
 ![npm downloads](https://img.shields.io/npm/dm/uipack-manan)
 
-**Ready to elevate your React development game?** Introducing `uipack-manan`, the perfect npm package for beginners and seasoned developers alike! With `uipack-manan`, you can start your React journey with simplicity and style. Dive in with a pre-built counter hook and a custom button component to create engaging and dynamic user interfaces with ease.
+**Tired of writing endless lines of code just to create modern, stylish buttons?** Struggling with how to implement them from scratch without spending hours on design and code? Say goodbye to the frustration! With **uipack-manan**, you can implement beautiful, fully customizable buttons and other UI components in just **a few lines of code**.
+
+We’ve designed this package for developers and designers who want to skip the hassle of manual styling and focus more on what matters. Whether you're a beginner or an experienced coder, **uipack-manan** makes it easy to build professional, eye-catching UI components without the overwhelming complexity. Customize the button’s style, toggle tooltips, select different variants, and even add a magical touch with our unique **magic star button**. All with minimal code!
+
+## 🎯 Live Demo
+
+Check out a working demo of **uipack-manan** in action on CodeSandbox! [Demo](https://codesandbox.io/p/sandbox/hmt47d).
+
+## ✨ What’s Included?
+
+- **Customizable Button Component**
+- **Easy-to-use Button Variants**
+- **Tooltip Toggle**
+- **Magic Star Button (For an extra surprise!)**
+
+And the best part? You can do all of this in **less code** than ever before!
 
 ---
 
-## ✨ Features
+## 🚀 Installation
 
-- **`useCounter` Hook:** Simplify state management for counters with increment and decrement functionality.
-- **Custom `Button` Component:** A sleek and reusable button component to streamline your UI development.
-- **Beginner-Friendly:** Perfect starting point for React developers learning state management and reusable components.
-- **Plug-and-Play:** Minimal setup to get started right away.
-
----
-
-## 📦 Installation
+Install `uipack-manan` via npm:
 
 ```bash
 npm install uipack-manan
 ```
 
----
+Then, import the Button component in your project:
 
-## 🔧 Usage
-
-Here’s how you can use the `useCounter` hook and the custom `Button` component in your React app:
-
-```jsx
-import "./App.css";
-import { Button, useCounter } from "uipack-manan";
-
-function App() {
-  const { count, increment, decrement } = useCounter();
-  return (
-    <>
-      <div style={{ marginBottom: "2rem" }}>
-        <button onClick={increment}>+</button>
-        <p>{count}</p>
-        <button onClick={decrement}>-</button>
-      </div>
-
-      <Button onclick={() => console.log("RockPoison There!")}>
-        Manan Bhasin
-      </Button>
-    </>
-  );
-}
-
-export default App;
+```bash
+import { Button } from "uipack-manan";
 ```
 
 ---
 
-## 📖 API Documentation
+## API Reference
 
-### **`useCounter` Hook**
+### Props
 
-The `useCounter` hook provides an easy way to manage counter states.
+```bash
+| **Prop**  | **Type**                                      | **Default** | **Description**                                   |
+|-----------|-----------------------------------------------|-------------|---------------------------------------------------|
+| `style`   | `React.CSSProperties`                         | `{}`        | Custom styles for the button.                    |
+| `onClick` | `() => void`                                  | `undefined` | Custom click handler function.                    |
+| `tooltip` | `string`                                      | `""`        | Tooltip text to show on hover.                   |
+| `variant` | `"default" | "uplift" | "slide" | "pop" | "shine"` | `"default"` | Choose a button style variant.                  |
+| `magic`   | `boolean`                                     | `false`     | Enable the magic star button effect.             |
+```
 
-#### Returns:
+## 🔥 Button Component
 
-- **`count`**: The current counter value.
-- **`increment`**: Function to increase the counter.
-- **`decrement`**: Function to decrease the counter.
+Our button component is fully customizable and supports various features like:
 
-### **Custom `Button` Component**
+Custom styling
+Custom onClick actions
+Tooltip visibility toggle
+Multiple button variants
+Magic button with an animation effect
 
-#### Props:
+---
 
-- **`onclick` (Function)**: Function to handle button clicks.
-- **`children` (ReactNode)**: Content to display inside the button.
+## 🔧 Usage
+
+Here’s how you can use the Button component:
+
+```bash
+<Button
+variant="uplift"
+style={{ backgroundColor: 'blue', color: 'white' }}
+tooltip={true}
+tooltipText="This is a button"
+onClick={() => console.log("Button clicked!")}
+magic={false}
+> Click Me
+</Button>
+```
+
+---
+
+## 🎨 Button Variants
+
+We offer 5 eye-catching button variants that you can easily use with a single prop!
+
+- default
+- uplift
+- slide
+- pop
+- shine
+
+---
+
+## ✨ Magic Star Button
+
+Want to add a little `magic` to your buttons? Set the magic prop to `true` and see the transformation into a dazzling magic star button!
+
+```bash
+<Button
+magic={true}
+onClick={() => console.log("Magic Clicked!")}
+Hover Me for Magic </Button>
+```
+
+---
+
+## 💡 Features
+
+> Custom Styling: Customize the button’s styles using the style prop.
+> Variants: Choose from 5 different variants to fit the look of your app.
+> Tooltip: Toggle the tooltip visibility using the tooltip prop.
+> Easy Customization: Add any custom onClick function to handle user interactions.
+> Magic Button: Activate a magical star effect with the magic prop.
 
 ---
 
@@ -79,7 +121,7 @@ The `useCounter` hook provides an easy way to manage counter states.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/uipack-manan.git
+   git clone https://github.com/manan5657/uipack-manan
    ```
 2. Install dependencies:
    ```bash

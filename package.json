@@ -1,6 +1,6 @@
 {
   "name": "uipack-manan",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "type": "module",
   "types": "dist/index.d.ts",
@@ -11,16 +11,30 @@
   "scripts": {
     "build": "npx rollup -c",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "postbuild": "cp -r ./src/styles dist/styles"
   },
   "keywords": [
-    "react",
-    "react-hooks",
-    "counter",
     "ui-components",
-    "custom-button",
-    "beginner-friendly",
-    "npm-package"
+    "ui-kit",
+    "react-components",
+    "buttons",
+    "react-ui",
+    "custom-buttons",
+    "react-ui-kit",
+    "button-variants",
+    "tooltip",
+    "react-tooltip",
+    "magic-button",
+    "react-button",
+    "uiux",
+    "front-end",
+    "uiux-developer",
+    "css-buttons",
+    "react-library",
+    "web-design",
+    "minimal-code",
+    "developer-tools"
   ],
   "homepage": "https://github.com/manan5657/uipack-manan#readme",
   "author": {
@@ -29,7 +43,7 @@
     "url": "https://mananbhasin.me"
   },
   "license": "MIT",
-  "description": "A beginner-friendly React UI package with a counter hook and custom button component.This is an npm package for react ui components in which an user can use creative and fully responsive ui components in their projects by writing less code and in fully seamless way.",
+  "description": "Tired of writing endless lines of code just to create modern, stylish buttons? Struggling with how to implement them from scratch without spending hours on design and code? Say goodbye to the frustration! With uipack-manan, you can implement beautiful, fully customizable buttons and other UI components in just a few lines of code.",
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.4",
     "@rollup/plugin-babel": "^6.0.4",
@@ -42,11 +56,16 @@
     "@storybook/react": "^8.5.0",
     "@storybook/react-webpack5": "^8.5.0",
     "@storybook/test": "^8.5.0",
+    "@types/prop-types": "^15.7.14",
     "@types/react": "^19.0.7",
+    "css-loader": "^7.1.2",
+    "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rollup": "^4.31.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "storybook": "^8.5.0",
+    "style-loader": "^4.0.0",
     "tslib": "^2.8.1"
   },
   "peerDependencies": {
