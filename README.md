@@ -5,7 +5,7 @@
 
 **Tired of writing endless lines of code just to create modern, stylish buttons?** Struggling with how to implement them from scratch without spending hours on design and code? Say goodbye to the frustration! With **uipack-manan**, you can implement beautiful, fully customizable buttons and other UI components in just **a few lines of code**.
 
-We’ve designed this package for developers and designers who want to skip the hassle of manual styling and focus more on what matters. Whether you're a beginner or an experienced coder, **uipack-manan** makes it easy to build professional, eye-catching UI components without the overwhelming complexity. Customize the button’s style, toggle tooltips, select different variants, and even add a magical touch with our unique **magic star button**. All with minimal code!
+I’ve designed this package for developers and designers who want to skip the hassle of manual styling and focus more on what matters. Whether you're a beginner or an experienced coder, **uipack-manan** makes it easy to build professional, eye-catching UI components without the overwhelming complexity. Customize the button’s style, toggle tooltips, select different variants, and even add a magical touch with our unique **magic star button**. All with minimal code!
 
 ## 🎯 Live Demo
 
@@ -40,27 +40,26 @@ import { Button } from "uipack-manan";
 
 ## API Reference
 
-### Props
+| Prop          | Type                                                   | Default     | Description                          |
+| ------------- | ------------------------------------------------------ | ----------- | ------------------------------------ |
+| `style`       | `React.CSSProperties`                                  | `{}`        | Custom styles for the button.        |
+| `onClick`     | `() => void`                                           | `undefined` | Custom click handler function.       |
+| `tooltipText` | `string`                                               | `""`        | Tooltip text to show on hover.       |
+| `tooltip`     | `boolean`                                              | `false`     | Enable tooltip to show on hover.     |
+| `variant`     | `"default" \| "uplift" \| "slide" \| "pop" \| "shine"` | `"default"` | Choose a button style variant.       |
+| `magic`       | `boolean`                                              | `false`     | Enable the magic star button effect. |
 
-```bash
-| **Prop**  | **Type**                                      | **Default** | **Description**                                   |
-|-----------|-----------------------------------------------|-------------|---------------------------------------------------|
-| `style`   | `React.CSSProperties`                         | `{}`        | Custom styles for the button.                    |
-| `onClick` | `() => void`                                  | `undefined` | Custom click handler function.                    |
-| `tooltip` | `string`                                      | `""`        | Tooltip text to show on hover.                   |
-| `variant` | `"default" | "uplift" | "slide" | "pop" | "shine"` | `"default"` | Choose a button style variant.                  |
-| `magic`   | `boolean`                                     | `false`     | Enable the magic star button effect.             |
-```
+---
 
 ## 🔥 Button Component
 
 Our button component is fully customizable and supports various features like:
 
-Custom styling
-Custom onClick actions
-Tooltip visibility toggle
-Multiple button variants
-Magic button with an animation effect
+- Custom styling
+- Custom onClick actions
+- Tooltip visibility toggle
+- Multiple button variants
+- Magic button with an animation effect
 
 ---
 
@@ -84,7 +83,7 @@ magic={false}
 
 ## 🎨 Button Variants
 
-We offer 5 eye-catching button variants that you can easily use with a single prop!
+My package offer 6 eye-catching button variants that you can easily use with a single prop!
 
 - default
 - uplift
@@ -109,11 +108,11 @@ Hover Me for Magic </Button>
 
 ## 💡 Features
 
-> Custom Styling: Customize the button’s styles using the style prop.
-> Variants: Choose from 5 different variants to fit the look of your app.
-> Tooltip: Toggle the tooltip visibility using the tooltip prop.
-> Easy Customization: Add any custom onClick function to handle user interactions.
-> Magic Button: Activate a magical star effect with the magic prop.
+> - Custom Styling: Customize the button’s styles using the style prop.
+> - Variants: Choose from 6 different variants to fit the look of your app.
+> - Tooltip: Toggle the tooltip visibility using the tooltip prop.
+> - Easy Customization: Add any custom onClick function to handle user interactions.
+> - Magic Button: Activate a magical star effect with the magic prop.
 
 ---
 

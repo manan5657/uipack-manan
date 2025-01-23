@@ -4,7 +4,7 @@ import "../styles/Button.css";
 
 type ButtonProps = {
   children: React.ReactNode;
-  variant?: "default" | "uplift" | "slide" | "pop" | "shine"; // Allow all variants
+  variant?: "default" | "uplift" | "slide" | "pop" | "shine" | "rainbow"; // Allow all variants
   style?: React.CSSProperties; // Use React.CSSProperties for styles
   tooltip?: boolean; // tooltip is a boolean
   tooltipText?: string; // tooltipText should be a string
@@ -28,6 +28,7 @@ const Button = ({
     slide: "btn-slide",
     pop: "btn-pop",
     shine: "btn-shine",
+    rainbow: "btn-rainbow",
   };
 
   const variantClass = variants[variant] || variants.default;
@@ -78,20 +79,10 @@ const Button = ({
     >
       {tooltip && showTooltip && <div className="tooltip">{tooltipText}</div>}
       <button className={`btn ${variantClass}`} style={style} onClick={onClick}>
-        {children}
+        <span>{children}</span>
       </button>
     </div>
   );
 };
-
-// Button.propTypes = {
-//   children: PropTypes.node.isRequired,
-//   variant: PropTypes.oneOf(["default", "uplift", "slide", "pop", "shine"]),
-//   style: PropTypes.object,
-//   tooltip: PropTypes.bool,
-//   tooltipText: PropTypes.string,
-//   onClick: PropTypes.func,
-//   magic: PropTypes.bool, // New prop
-// };
 
 export { Button };
