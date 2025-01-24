@@ -1,4 +1,9 @@
-# UIPack-Manan - A UI Pack for Developers
+<p align="center">
+  <img src="https://github.com/manan5657/AssetsManan/blob/8e486ae58d7b7a45f667c3584c24e9b4844a3bd4/uipacklogo.svg" alt="uipack-manan Logo" width="150">
+</p>
+<h1 align="center">
+UIPack-Manan - A UI Pack for Developers
+</h1>
 
 ![npm version](https://img.shields.io/npm/v/uipack-manan)
 ![npm downloads](https://img.shields.io/npm/dm/uipack-manan)
