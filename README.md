@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/manan5657/AssetsManan/blob/549aee142453307171df3443f874dc94958de50f/updateduipacklogo.svg" alt="uipack-manan Logo" width="180">
+  <img src="https://github.com/manan5657/uipack-manan/blob/3bf68730d8eee6c238fb9026afcace0310716149/UIPACK-MANAN-LOGO.gif" alt="uipack-manan Logo" width="180">
 </p>
 <h1 align="center">
 UIPack-Manan - A UI Pack for Developers
